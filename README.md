@@ -1,2 +1,2 @@
-# api
-Api's for stuff
+# API
+The Otter Bots API.
