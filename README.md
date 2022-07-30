@@ -1,2 +1,2 @@
 # API
-[WIP] The Otter Bots API.
+[WIP] The API for Otter Bots.
