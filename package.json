@@ -14,5 +14,10 @@
     "colorette": "^2.0.19",
     "dotenv": "^16.0.1",
     "express": "^4.18.1"
+  },
+  "scripts": {
+    "deps": "yarn install && yarn install --dev",
+    "compile": "tsc",
+    "start": "node ."
   }
 }
