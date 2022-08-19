@@ -1,10 +1,15 @@
 import express from 'express';
 import "dotenv/config";
+import container from './container';
+import logger from './utils/logger';
+import { grabRoutes } from './grabRoutes';
 const { PORT } = process.env;
 const app = express();
-app.get('/', (_req, res) => {
-    res.send('Hello World!');
-});
+container.app = app;
+(async () => {
+    await grabRoutes(app);
+})()
+logger.debug(container.routes);
 app.listen(Number(PORT), () => {
-    console.log(`Listening on port ${PORT}`);
+    logger.info(`Listening on port ${PORT}`);
 });
