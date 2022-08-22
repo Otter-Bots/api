@@ -4,6 +4,7 @@ import container from "../../container";
 const data: routesTemplate = {
     type: "get",
     route: "/blacklist/delete/:id",
+    secure: true,
     funct: async (req: Request, res: Response) => {
         const id = req.params.id;
         const blacklist = await container.db.get("blacklist");
