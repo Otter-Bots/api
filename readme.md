@@ -1,11 +1,11 @@
 # API
 
-# how to run
+# How do I run it?
 
-1. copy and rename example.env to .env
-2. fill it out
-3. run: yarn deps
-4. run: yarn compile
-5. start mysql docker container
-6. run: yarn start
+1. Copy and rename `example.env` to `.env`
+2. Fill it out
+3. Run: `yarn deps`
+4. Run: `yarn compile`
+5. Start MySQL Docker container
+6. Run: `yarn start`
 
