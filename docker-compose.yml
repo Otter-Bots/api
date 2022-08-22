@@ -16,4 +16,6 @@ services:
       MYSQL_PASSWORD: "otter"
     ports:
       - 3306:3306
+    volumes:
+      - /db/api/:/var/lib/mysql
   
