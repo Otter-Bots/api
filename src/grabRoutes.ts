@@ -16,31 +16,36 @@ export async function grabRoutes(app: Application) {
                 funct: route.default.funct,
                 route: route.default.route
             });
-            createRoute(app, route.default.type, route.default.route, route.default.funct);
+           await createRoute(app, route.default.type, route.default.route, route.default.funct);
             logger.success(`Loaded Route: ${route.name}`);
 	    }
     }
     logger.success("Finished Loading Routes")
 }
-function createRoute(app: Application, type: string, route: string, funct: Function) {
+async function createRoute(app: Application, type: string, route: string, funct: Function) {
     switch (type) {
         case "get":
-            return app.get(route, ((req, res) => {
-                funct(req, res)
+            return app.get(route, (async (req, res) => {
+                await funct(req, res)
         }));
         case "post":
-            return app.post(route, ((req, res) => {
-                funct(req, res)
+            return app.post(route, (async (req, res) => {
+                await funct(req, res)
         }));
         case "put":
-            return app.put(route, ((req, res) => {
-                funct(req, res)
+            return app.put(route, (async (req, res) => {
+                await funct(req, res)
         }));
         case "delete":
-            return app.delete(route, ((req, res) => {
-                funct(req, res)
+            return app.delete(route, (async (req, res) => {
+                await funct(req, res)
         }));
         default:
             return logger.warning(`Invalid Route Type: ${type} on ${route}`);
     }
+}
+export type routesTemplate = {
+    type: string,
+    route: string,
+    funct: Function
 }

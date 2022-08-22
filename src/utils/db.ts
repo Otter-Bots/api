@@ -17,4 +17,8 @@ import { QuickDB, MySQLDriver } from 'quick.db';
     logger.success(`Connected to ${DB_NAME} DB`);
     container.db = db;
     container.dbConnection = mysql;
+    if (await db.get("blacklist") == undefined) {
+        await db.set("blacklist", []);
+        logger.debug("Created blacklist Array");
+    }
 })();

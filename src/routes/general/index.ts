@@ -3,7 +3,7 @@ import type { Request, Response } from "express";
 const data = {
     type: 'get',
     route: '/',
-    funct: (_req: Request, res: Response) => {
+    funct: async (_req: Request, res: Response) => {
         res.send('Hello World!');
     }
 }

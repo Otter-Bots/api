@@ -10,7 +10,6 @@ container.app = app;
 (async () => {
     await grabRoutes(app);
 })()
-logger.debug(container.routes);
 app.listen(Number(PORT), () => {
     logger.info(`Listening on port ${PORT}`);
 });
