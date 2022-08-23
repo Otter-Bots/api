@@ -3,7 +3,7 @@ import type { QuickDB } from "quick.db";
 type dbContainerType = QuickDB | any;
 interface IContainer {
     routes: any;
-    app: Express.Application;
+    app: any;
     db: dbContainerType;
     dbConnection: dbContainerType;
 }
