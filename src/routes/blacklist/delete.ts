@@ -2,7 +2,7 @@ import type { routesTemplate } from "../../grabRoutes";
 import type { Request, Response } from "express";
 import container from "../../container";
 const data: routesTemplate = {
-    type: "get",
+    type: "delete",
     route: "/blacklist/delete/:id",
     secure: true,
     funct: async (req: Request, res: Response) => {
