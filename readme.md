@@ -1,6 +1,7 @@
 # API
+An API built for Otter Bots, will be used for various things in the future.
 
-# How do I run it?
+## How do I run it?
 
 1. Copy and Rename `example.env` to `.env`
 2. Fill it oeut
