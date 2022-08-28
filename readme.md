@@ -1,5 +1,5 @@
 # API
-An API built for Otter Bots, will be used for various things in the future.
+An API for Otter Bots, will be used for various things in the future.
 
 ## How do I run it?
 
