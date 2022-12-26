@@ -1,5 +1,5 @@
 # API
-The API for Otter Bots, found at [api.otterbots.xyz](https://api.otterbots.xyz). This powers the Otter Bots Networks and connected projects.
+The API for Otter Bots, found at [api.otterbots.xyz](https://api.otterbots.xyz). This powers the Otter Bots Network and connected projects.
 
 ## How to run it:
 
