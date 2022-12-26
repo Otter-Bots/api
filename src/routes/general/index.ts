@@ -6,7 +6,7 @@ const data: routesTemplate = {
     route: '/',
     secure: false,
     funct: async (_req: Request, res: Response) => {
-        res.send('This is the web page for the API for Otter Bots (bit confusing). This will be used for various things in the future. This page will be updated soon.');
+        res.send('The API powers the Otter Bots Network and connected projects.');
     }
 }
 export default data;
