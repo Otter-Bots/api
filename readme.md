@@ -1,7 +1,7 @@
 # API
-An API for Otter Bots, will be used for various things in the future.
+An API for Otter Bots, will be used for various things in the future. Find it at https://api.otterbots.xyz.
 
-## How do I run it?
+## How to run it:
 
 1. Copy and rename `example.env` to `.env`
 2. Fill it out
