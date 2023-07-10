@@ -616,9 +616,9 @@ qs@6.10.3:
     side-channel "^1.0.4"
 
 quick.db@^9.0.6:
-  version "9.0.6"
-  resolved "https://registry.yarnpkg.com/quick.db/-/quick.db-9.0.6.tgz#de2070bbbb053d4ca0c58126088f389d54f17865"
-  integrity sha512-3XDapl8dPe2PRYTvrDeDGHQH3beXINpuipBeu8r5VqAFgDO/r3Us8A2VzcGGkhtbBYlvoyPObZ3e7rJX4WVenw==
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/quick.db/-/quick.db-9.1.7.tgz#65056bc2033780236855b9c7ea3b0081c387f76f"
+  integrity sha512-ZLPVLVFZtvFRLHqIK99iyrLDUznOTpnp5tB+QpGErT+reDSvgBELuVsMkGSSiqKT9R2YSOhO+096Wb0xTaOHMA==
   dependencies:
     lodash "^4.17.21"
 
